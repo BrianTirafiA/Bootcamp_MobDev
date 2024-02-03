@@ -11,9 +11,9 @@
 
     <View
         android:id="@+id/view"
-        android:layout_width="400dp"
-        android:layout_height="555dp"
-        android:layout_marginTop="25dp"
+        android:layout_width="380dp"
+        android:layout_height="545dp"
+        android:layout_marginTop="40dp"
         android:layout_centerHorizontal="true"
         android:background="@drawable/makedonasi_bg"
         />
@@ -29,7 +29,7 @@
             android:id="@+id/textAksiDonasi"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="45dp"
+            android:layout_marginTop="60dp"
             android:text="AKSI DONASI"
             android:textColor="@color/black"
             android:textSize="45sp" />
@@ -38,7 +38,7 @@
             android:id="@+id/FormNamaAksi"
             android:layout_width="350dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="35dp"
             android:background="@drawable/rounded_cornerblack"
             android:hint="Nama Aksi"
             android:inputType="text"
@@ -99,6 +99,49 @@
             android:text="TAMBAH"
             android:textColor="@color/white"
             android:textSize="27sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/menu_bar"
+        android:gravity="center"
+        android:layout_marginTop="655dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/home"
+            android:background=""
+            android:padding="10dp"
+            android:layout_marginHorizontal="10dp"/>
+
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/weather"
+            android:background=""
+            android:padding="10dp"
+            android:layout_marginHorizontal="10dp"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/money"
+            android:background=""
+            android:padding="10dp"
+            android:layout_marginHorizontal="10dp"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/profile"
+            android:background=""
+            android:padding="10dp"
+            android:layout_marginHorizontal="10dp"/>
 
     </LinearLayout>
 </RelativeLayout>
