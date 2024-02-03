@@ -75,7 +75,7 @@
                 android:text=" Register"
                 android:textColor="#3092CA"
                 android:textSize="16sp"
-                android:id="@+id/register_btn"/>
+                android:id="@+id/toregister_btn"/>
 
 
 
