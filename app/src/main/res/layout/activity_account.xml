@@ -92,9 +92,12 @@
             android:layout_width="300dp"
             android:layout_height="70dp"
             android:background="@drawable/rounded_corner_2"
+            android:alpha="0.66"
             android:text="Update Account"
             android:textColor="@color/black"
-            android:textSize="20dp" />
+            android:textSize="20dp"
+            android:textAllCaps="false"
+            />
 
     </LinearLayout>
 
