@@ -1,9 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
     tools:context=".makedonasi">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/textAksiDonasi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:textSize="45sp"
+        android:text="AKSI DONASI"
+        />
+
+    <EditText
+        android:id="@+id/FormNamaAksi"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="85dp"
+        android:background="@drawable/rounded_cornerblack"
+        android:hint="Nama Aksi"
+        android:inputType="text"
+        android:padding="18dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="15sp"
+        android:visibility="visible" />
+
+    <EditText
+        android:id="@+id/FormTargetDonasi"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/rounded_cornerblack"
+        android:hint="Target Donasi"
+        android:inputType="text"
+        android:padding="18dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="15sp"
+        android:visibility="visible" />
+
+    <EditText
+        android:id="@+id/FormTambahGambar"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/rounded_cornerblack"
+        android:hint="Tambah Gambar"
+        android:inputType="text"
+        android:padding="18dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="15sp"
+        android:visibility="visible" />
+
+
+</LinearLayout>
