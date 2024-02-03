@@ -19,7 +19,7 @@ class login : AppCompatActivity() {
         btnlogin = findViewById(R.id.login_btn)
 
         btnlogin.setOnClickListener{
-            
+
         }
     }
 }
