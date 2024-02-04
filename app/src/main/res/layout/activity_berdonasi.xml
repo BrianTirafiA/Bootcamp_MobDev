@@ -1,9 +1,140 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".berdonasi">
+    <View
+        android:id="@+id/view"
+        android:layout_width="380dp"
+        android:layout_height="545dp"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/makedonasi_bg"
+        />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        tools:context=".makedonasi">
+
+        <TextView
+            android:id="@+id/textAksiDonasi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:text="NAMA AKSI"
+            android:textColor="@color/black"
+            android:textSize="45sp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="145"
+            tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+        <EditText
+            android:id="@+id/FormNamaLengkap"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/rounded_cornerblack"
+            android:hint="Nama Lengkap"
+            android:inputType="text"
+            android:padding="18dp"
+            android:textColor="@color/black"
+            android:textColorHint="#7A7A7A"
+            android:textSize="15sp"
+            android:visibility="visible" />
+
+        <EditText
+            android:id="@+id/FormNominal"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/rounded_cornerblack"
+            android:hint="Nominal"
+            android:inputType="text"
+            android:padding="18dp"
+            android:textColor="@color/black"
+            android:textColorHint="#7A7A7A"
+            android:textSize="15sp"
+            android:visibility="visible" />
+
+        <EditText
+            android:id="@+id/FormPembayaranDonasi"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/rounded_cornerblack"
+            android:hint="Metode Pembayaran"
+            android:inputType="text"
+            android:padding="18dp"
+            android:textColor="@color/black"
+            android:textColorHint="#7A7A7A"
+            android:textSize="15sp"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/buttonTambahDonasi"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/roundedrec_button"
+            android:text="DONASI"
+            android:textColor="@color/white"
+            android:textSize="27sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/menu_bar"
+        android:gravity="center"
+        android:layout_marginTop="655dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/navbarHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/home"
+            android:background=""
+            android:padding="10dp"
+            android:layout_marginHorizontal="10dp"/>
+
+
+        <ImageButton
+            android:id="@+id/navbarWeather"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/weather"
+            android:background=""
+            android:padding="10dp"
+            android:layout_marginHorizontal="10dp"/>
+
+        <ImageButton
+            android:id="@+id/navbarDonasi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/money"
+            android:background=""
+            android:padding="10dp"
+            android:layout_marginHorizontal="10dp"/>
+
+        <ImageButton
+            android:id="@+id/navbarProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/profile"
+            android:background=""
+            android:padding="10dp"
+            android:layout_marginHorizontal="10dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
