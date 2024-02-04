@@ -24,7 +24,7 @@
                 android:layout_height="wrap_content"
                 android:divider="@android:color/darker_gray"
                 android:dividerHeight="1dp"
-                android:background="@android:drawable/dialog_holo_light_frame"
+                android:background="@drawable/rounded_corner4"
                 />
 
             <ListView
@@ -33,26 +33,24 @@
                 android:layout_height="wrap_content"
                 android:divider="@android:color/darker_gray"
                 android:dividerHeight="1dp"
-                android:elevation="10dp"
-                android:background="@android:drawable/dialog_holo_light_frame"
+                android:background="@drawable/rounded_corner4"
                 />
         </LinearLayout>
     </ScrollView>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_above="@+id/menu_bar">
 
         <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginEnd="25dp"
             android:background="?attr/selectableItemBackgroundBorderless"
             android:src="@drawable/add_button"
-            android:layout_marginEnd="25dp"
-            android:layout_marginBottom="100dp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            />
+            app:layout_constraintEnd_toEndOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -63,13 +61,14 @@
         android:background="@drawable/menu_bar"
         android:layout_marginTop="22dp"
         android:layout_alignParentBottom="true"
+        android:gravity="center"
         android:orientation="horizontal">
 
         <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/home"
-            android:background=""
+            android:background=" "
             android:padding="10dp"
             android:layout_marginHorizontal="10dp"
             />
