@@ -32,7 +32,7 @@
                         >
 
                         <ImageView
-                            android:id="@+id/pp"
+                            android:id="@+id/pp_forum"
                             android:layout_width="30dp"
                             android:layout_height="30dp"
                             android:src="@drawable/profile"
@@ -41,6 +41,7 @@
 
 
                         <TextView
+                            android:id="@+id/account_name_forum"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="tanggap bencana_sleman"
@@ -56,6 +57,7 @@
                         >
 
                         <TextView
+                            android:id="@+id/comment_forum"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="Mohon izin, share informasi awan panas sedikit mulai turun dini hari dari tadi pukup 03:00 WIB. Dimohon untuk selalu waspada bagi warga sekitar, terutama dalam radius 10km"
@@ -72,6 +74,7 @@
                         android:orientation="horizontal">
                         
                         <ImageButton
+                            android:id="@+id/like_button"
                             android:layout_width="30dp"
                             android:layout_height="30dp"
                             android:background=" "
@@ -80,6 +83,7 @@
                             />
 
                         <ImageButton
+                            android:id="@+id/comment_button"
                             android:layout_width="30dp"
                             android:layout_height="30dp"
                             android:background=" "
@@ -89,6 +93,7 @@
                             />
 
                         <ImageButton
+                            android:id="@+id/donasi_button_forum"
                             android:layout_width="30dp"
                             android:layout_height="30dp"
                             android:src="@drawable/money_forum"
@@ -98,7 +103,7 @@
 
                     </LinearLayout>
 
-                </LinearLayout
+                </LinearLayout>
             </RelativeLayout>
 
 

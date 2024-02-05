@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/main">
+
+    <fragment
+        android:id="@+id/main"
+
+        android:label="activity_main"
+        tools:layout="@layout/activity_main"
+        >
+
+        <action
+            android:id="@+id/main_to_login"
+            app:destination="@+id/login"
+            />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/login"
+        android:label="activity_login"
+        tools:layout="@layout/activity_login">
+
+        <action
+            android:id="@+id/login_to_home"
+            app:destination="@id/home"
+            />
+
+        <action
+            android:id="@+id/login_to_register"
+            app:destination="@id/register"
+            />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/register"
+        android:label="activity_ragister"
+        tools:layout="@layout/activity_ragister"
+        >
+
+        <action
+            android:id="@+id/register_to_home"
+            app:destination="@+id/home"
+            />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/home"
+        android:label="activity_home"
+        tools:layout="@layout/activity_home">
+
+        <action
+            android:id="@+id/home_to_berdonasi"
+            app:destination="@id/berdonasi"
+            />
+
+        <action
+            android:id="@+id/home_to_postforum"
+            app:destination="@+id/postforum"
+            />
+
+        <action
+            android:id="@+id/home_to_weather"
+            app:destination="@id/weather"
+            />
+
+        <action
+            android:id="@+id/home_to_donasi"
+            app:destination="@id/donasi"
+            />
+
+        <action
+            android:id="@+id/home_to_profile"
+            app:destination="@id/profile"
+            />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/postforum"
+        android:label="activity_postforum"
+        tools:layout="@layout/activity_postforum"
+        >
+
+        <action
+            android:id="@+id/postforum_to_home"
+            app:destination="@id/home"
+            />
+
+        <action
+            android:id="@+id/postforum_to_weather"
+            app:destination="@id/weather"
+            />
+
+        <action
+            android:id="@+id/postforum_to_donasi"
+            app:destination="@id/donasi"
+            />
+
+        <action
+            android:id="@+id/postforum_to_profile"
+            app:destination="@id/profile"
+            />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/weather"
+        android:label="activity_weather"
+        tools:layout="@layout/activity_weather"
+        >
+
+         <action
+            android:id="@+id/weather_to_home"
+            app:destination="@id/home"
+            />
+
+        <action
+            android:id="@+id/weather_to_donasi"
+            app:destination="@id/donasi"
+            />
+
+        <action
+            android:id="@+id/weather_to_profile"
+            app:destination="@+id/profile"
+            />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/profile"
+        android:label="activity_profile"
+        tools:layout="@layout/activity_profile">
+
+        <action
+            android:id="@+id/profile_to_account"
+            app:destination="@id/account"
+            />
+
+        <action
+            android:id="@+id/profile_to_login"
+            app:destination="@id/login"
+            />
+
+        <action
+            android:id="@+id/profile_to_home"
+            app:destination="@id/home"
+            />
+
+        <action
+            android:id="@+id/profile_to_weather"
+            app:destination="@id/weather"
+            />
+
+        <action
+            android:id="@+id/profile_to_donasi"
+            app:destination="@+id/donasi"
+            />
+
+        </fragment>
+
+    <fragment
+        android:id="@+id/account"
+        android:label="activity_account"
+        tools:layout="@layout/activity_account">
+
+        <action
+            android:id="@+id/account_to_home"
+            app:destination="@id/home"
+            />
+
+        <action
+            android:id="@+id/account_to_weather"
+            app:destination="@id/weather"
+            />
+
+        <action
+            android:id="@+id/account_to_donasi"
+            app:destination="@id/donasi"
+            />
+
+        <action
+            android:id="@+id/account_to_profile"
+            app:destination="@id/profile"
+            />
+    </fragment>
+
+    <fragment
+        android:id="@+id/donasi"
+        android:label="activity_donasi"
+        tools:layout="@layout/activity_donasi"
+        >
+
+        <action
+            android:id="@+id/donasi_to_makedonasi"
+            app:destination="@id/makedonasi"
+            />
+
+        <action
+            android:id="@+id/donasi_to_berdonasi"
+            app:destination="@id/berdonasi"
+            />
+
+        <action
+            android:id="@+id/donasi_to_home"
+            app:destination="@id/home"
+            />
+
+        <action
+            android:id="@+id/donasi_to_weather"
+            app:destination="@id/weather"
+            />
+
+        <action
+            android:id="@+id/donasi_to_profile"
+            app:destination="@id/profile"
+            />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/makedonasi"
+        android:label="activity_makedonasi"
+        tools:layout="@layout/activity_makedonasi"
+        >
+
+        <action
+            android:id="@+id/makedonasi_to_donasi"
+            app:destination="@id/donasi"
+            />
+
+        <action
+            android:id="@+id/makedonasi_to_home"
+            app:destination="@id/home"
+            />
+
+        <action
+            android:id="@+id/makedonasi_to_weather"
+            app:destination="@id/weather"
+            />
+
+        <action
+            android:id="@+id/makedonasi_to_profile"
+            app:destination="@id/profile"
+            />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/berdonasi"
+        android:label="activity_berdonasi"
+        tools:layout="@layout/activity_berdonasi"
+        >
+
+        <action
+            android:id="@+id/berdonasi_to_donasi"
+            app:destination="@id/donasi"
+            />
+
+        <action
+            android:id="@+id/berdonasi_to_home"
+            app:destination="@id/home"
+            />
+
+        <action
+            android:id="@+id/berdonasi_to_weather"
+            app:destination="@id/weather"
+            />
+
+        <action
+            android:id="@+id/berdonasi_to_profile"
+            app:destination="@id/profile"
+            />
+
+    </fragment>
+
+</navigation>
