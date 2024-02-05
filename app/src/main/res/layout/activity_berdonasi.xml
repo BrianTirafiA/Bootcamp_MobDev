@@ -33,7 +33,7 @@
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="match_parent"
-            android:layout_height="145"
+            android:layout_height="145dp"
             tools:srcCompat="@tools:sample/backgrounds/scenic" />
 
         <EditText
