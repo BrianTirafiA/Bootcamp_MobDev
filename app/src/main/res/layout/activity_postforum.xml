@@ -6,22 +6,117 @@
     android:layout_height="match_parent"
     tools:context=".postforum">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_above="@id/menu_bar">
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_corner4"
+        android:padding="10dp"
+        >
 
-        <ImageButton
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="?attr/selectableItemBackgroundBorderless"
-            android:src="@drawable/add_button"
-            android:layout_marginEnd="25dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            />
+            android:orientation="vertical"
+            >
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+            <LinearLayout
+                android:id="@+id/account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <ImageView
+                    android:id="@+id/pp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/profile"
+                    android:layout_margin="8dp"
+                    />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="account_name"
+                    android:textSize="11dp"
+                    android:layout_marginTop="14dp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:background=" "
+                    android:layout_margin="8dp"
+                    app:layout_constraintStart_toStartOf="@id/pp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/buttons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/image_button"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background=" "
+                    android:src="@drawable/image_button"
+                    android:layout_margin="8dp"
+                    />
+
+                <ImageButton
+                    android:id="@+id/link_button"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background=" "
+                    android:src="@drawable/link_button"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    />
+
+                <ImageButton
+                    android:id="@+id/money_button"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/money_forum_2"
+                    android:background=""
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <ImageButton
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/upload_button"
+                        android:background=" "
+                        android:layout_margin="8dp"
+                        android:layout_alignParentRight="true"
+                        />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
 
     <LinearLayout
         android:id="@+id/menu_bar"
