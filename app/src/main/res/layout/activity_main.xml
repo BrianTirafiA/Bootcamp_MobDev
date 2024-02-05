@@ -28,6 +28,17 @@
             android:textSize="38sp"
             android:textStyle="bold"/>
 
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Masuk"
+            android:backgroundTint="#035956"
+            android:textColor="#81ACAB"
+            android:padding="18dp"
+            android:layout_marginTop="32dp"
+            android:textSize="20sp"
+            android:id="@+id/masuk_btn"/>
+
     </LinearLayout>
 
 </RelativeLayout>

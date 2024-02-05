@@ -18,6 +18,7 @@ class ragister : AppCompatActivity() {
     private lateinit var iptemail: EditText
     private lateinit var iptpassword: EditText
     private lateinit var btnregister: Button
+    private lateinit var btnpindah : Button
     private lateinit var fireauth: FirebaseAuth
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -25,6 +26,7 @@ class ragister : AppCompatActivity() {
         iptusername = findViewById(R.id.username_input)
         iptpassword = findViewById(R.id.pass_input)
         btnregister = findViewById(R.id.register_btn)
+        btnpindah = findViewById(R.id.tologin_btn)
 
         fireauth = FirebaseAuth.getInstance()
 
