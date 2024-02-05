@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/weather_bg"
     android:orientation="vertical"
     tools:context=".account">
     <LinearLayout
@@ -123,7 +122,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/home"
-            android:background=""
+            android:background="@drawable/rounded_corner_2"
             android:padding="10dp"
             android:layout_marginHorizontal="10dp"
             />
@@ -134,7 +133,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/weather"
-            android:background=""
+            android:background="@drawable/rounded_corner_2"
             android:padding="10dp"
             android:layout_marginHorizontal="10dp"/>
 
@@ -143,7 +142,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/money"
-            android:background=""
+            android:background="@drawable/rounded_corner_2"
             android:padding="10dp"
             android:layout_marginHorizontal="10dp"/>
 
@@ -152,7 +151,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/profile"
-            android:background=""
+            android:background="@drawable/rounded_corner_2"
             android:padding="10dp"
             android:layout_marginHorizontal="10dp"/>
 

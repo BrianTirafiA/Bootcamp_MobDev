@@ -103,8 +103,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/home"
-            android:background=""
-            android:padding="10dp"
+            android:background="@drawable/rounded_corner_2"            android:padding="10dp"
             android:layout_marginHorizontal="10dp"/>
 
 
@@ -113,8 +112,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/weather"
-            android:background=""
-            android:padding="10dp"
+            android:background="@drawable/rounded_corner_2"            android:padding="10dp"
             android:layout_marginHorizontal="10dp"/>
 
         <ImageButton
@@ -122,8 +120,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/money"
-            android:background=""
-            android:padding="10dp"
+            android:background="@drawable/rounded_corner_2"            android:padding="10dp"
             android:layout_marginHorizontal="10dp"/>
 
         <ImageButton
@@ -131,8 +128,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/profile"
-            android:background=""
-            android:padding="10dp"
+            android:background="@drawable/rounded_corner_2"            android:padding="10dp"
             android:layout_marginHorizontal="10dp"/>
 
     </LinearLayout>
